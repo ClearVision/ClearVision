@@ -24,6 +24,7 @@ RemoveShadows theme: https://git.io/v6MuU IMPORTANT: Activate on top of a ClearV
 :root {
 	--main-color: #33e627;
 	--hover-color: #2ab31e;
+	--background-image: url("https://github.com/Zerthox/ClearVision/raw/master/images/emerald.jpg");
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -42,7 +43,7 @@ body::after,
 .invite-modal .invite-splash,
 .radio-theme.light label,
 .radio-theme.dark label{
-    background-image: url(https://github.com/Zerthox/ClearVision/raw/master/images/emerald.jpg) !important; /* IMPORTANT: Link must be HTTPS! */
+    background-image: var(--background-image) !important; /* IMPORTANT: Link must be HTTPS! */
 }
 /*
 --------------------------------------------------------------------------------------------------------------------------------------------
