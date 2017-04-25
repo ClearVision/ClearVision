@@ -1,7 +1,9 @@
-/* "ClearVision CSS v5.1.1" by @Zerthox */
+/* "ClearVision CSS v5.1.2-RC1" by @Hebgbs, for evaluation by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
+/* Modder's note: Some text items use text-shadow, not color for text color
+   since color being set to !important makes additional modification impossible. */
 /*
 ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\________/\\\______________________________________________________
  _____/\\\////////__\////\\\________________________________________________\/\\\_______\/\\\______________________________________________________
@@ -3227,7 +3229,8 @@ div#bd-pub-button:hover {
 }
 #friends .friends-header .tab-bar .tab-bar-item .badge {
     background-color: var(--main-color) !important;
-    color: #fff !important;
+    color: transparent !important;
+	text-shadow: 0 0 0 #fff;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
@@ -4434,7 +4437,8 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 }
 .chat .divider.divider-red > span {
     background: transparent !important;
-    color: hsla(0, 0%, 100%, 0.8) !important;
+	color: transparent !important;
+    text-shadow: 0 0 0 hsla(0, 0%, 100%, 0.8) !important;
     position: relative;
 }
 .chat .divider.divider-red > span::before {
