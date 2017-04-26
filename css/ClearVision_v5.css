@@ -1,4 +1,4 @@
-/* "ClearVision CSS v5.1.1" by @Zerthox */
+/* "ClearVision CSS v5.1.2" by @Zerthox */
 /* Based on "Discord Reborn v4.30" by @Omniscient & "DarkMatter" by @Hammock */
 
 /* BACKGROUND, LOADING ANIMATIONS & DEV MARK BY ZERTHOX */
@@ -14,7 +14,7 @@ ________/\\\\\\\\\__/\\\\\\_________________________________________________/\\\
          _______\/////////__\/////////____\//////////___\////////\//__\///________________\///________\///__\//////////__\///_____\/////_____\///____\///__
 */
 .account::after {
-    content: "ClearVision v5.1.1";
+    content: "ClearVision v5.1.2";
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -426,8 +426,8 @@ a,
 .theme-dark .chat .title-wrap .topic a,
 .markdown-modal a,
 .user-settings-modal a,
-#voice-connection .voice-connection-channel,
-#voice-connection-popout .debug-button,
+#rtc-connection .voice-connection-channel,
+#rtc-connection-popout .debug-button,
 .alert.form .form-inner .btn-close-forever,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name,
@@ -449,8 +449,8 @@ a:hover,
 .theme-dark .chat .title-wrap .topic a:hover,
 .markdown-modal a:hover,
 .user-settings-modal a:hover,
-#voice-connection .voice-connection-channel:hover,
-#voice-connection-popout .debug-button:hover,
+#rtc-connection .voice-connection-channel:hover,
+#rtc-connection-popout .debug-button:hover,
 .alert.form .form-inner .btn-close-forever:hover,
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations p a:hover,
 .messages-popout-wrap .messages-popout .channel-separator .channel-name:hover,
@@ -669,7 +669,7 @@ ld-channels ul .channel-voice-states li.speaking .avatar-small {
 .popout section {
     background-color: rgba(0, 0, 0, 0.7);
 }
-#voice-connection-popout hr {
+#rtc-connection-popout hr {
     border: 1px solid #4C4C4C;
 }
 .option-popout .btn-item,
@@ -1117,7 +1117,7 @@ textarea {
 .private-channels,
 .divider-red span,
 .messages-wrapper,
-#voice-connection {
+#rtc-connection {
     background: transparent !important;
 }
 .guilds-wrapper {
@@ -1214,16 +1214,16 @@ textarea {
 .account .btn-mute {
     border-right: none;
 }
-#voice-connection {
+#rtc-connection {
     border-top: none !important;
     padding: 10px 20px 10px 18px !important;
 }
-#voice-connection .btn {
+#rtc-connection .btn {
     background: rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
-#voice-connection .btn:active {
+#rtc-connection .btn:active {
     background: rgba(0, 0, 0, 0.6);
 }
 .account .btn-deafen,
@@ -1443,7 +1443,7 @@ textarea {
 .bd-minimal .guild-channels h2 {
     margin-left: 10px;
 }
-.bd-minimal #voice-connection {
+.bd-minimal #rtc-connection {
     width: 176px;
     margin-left: -46px;
 }
@@ -2085,7 +2085,7 @@ div.control-group .shortcut-recorder input[type=text] {
 img.image {
     border-radius: 5px;
 }
-#voice-connection .btn {
+#rtc-connection .btn {
     background: rgba(0, 0, 0, 0.45);
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -2929,7 +2929,7 @@ div#bd-pub-button:hover {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-#voice-connection .btn-group {
+#rtc-connection .btn-group {
     margin-right: -10px;
 }
 #friends .friends-header .tab-bar .tab-bar-item.selected {
@@ -3395,13 +3395,13 @@ button:active {
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
-#voice-connection .btn,
+#rtc-connection .btn,
 .account .btn {
     background: transparent !important;
     border: none;
 }
-#voice-connection .btn-disconnect,
-#voice-connection .btn-info,
+#rtc-connection .btn-disconnect,
+#rtc-connection .btn-info,
 .account .btn-settings,
 .account .btn-deafen,
 .account .btn-mute {
@@ -3414,19 +3414,19 @@ button:active {
     right: 4px;
 }
 .account .btn-group,
-#voice-connection .btn-group {
+#rtc-connection .btn-group {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, .3);
     height: 32px;
     border: none;
 }
-#voice-connection .btn-info::after {
+#rtc-connection .btn-info::after {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/info.svg) !important;
     background-position: center;
     background-size: 20px;
     opacity: .3;
 }
-#voice-connection .btn-disconnect::after {
+#rtc-connection .btn-disconnect::after {
     background-image: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/call_end.svg);
     background-position: center;
     background-size: 20px;
@@ -3434,7 +3434,7 @@ button:active {
 }
 .account .btn-mute,
 .account .btn-deafen,
-#voice-connection .btn-info {
+#rtc-connection .btn-info {
     border-right: 1px solid hsla(0, 0%, 100%, .2);
     height: 26px;
     bottom: 3px;
@@ -3478,7 +3478,7 @@ button:active {
 .guild-channels .channel-voice-states li .icon {
     opacity: .3 !important;
 }
-#voice-connection .btn-group .btn:active {
+#rtc-connection .btn-group .btn:active {
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
 }
@@ -3486,7 +3486,7 @@ button:active {
     -webkit-transform: scale(1) !important;
     transform: scale(1) !important;
 }
-#voice-connection .btn-group .btn::after {
+#rtc-connection .btn-group .btn::after {
     -webkit-transition: -webkit-transform .1s ease-in-out;
     transition: -webkit-transform .1s ease-in-out;
     transition: transform .1s ease-in-out;
@@ -3499,7 +3499,7 @@ button:active {
     transition: transform .1s ease-in-out, -webkit-transform .1s ease-in-out;
     opacity: .3;
 }
-#voice-connection .btn-group .btn:active::after {
+#rtc-connection .btn-group .btn:active::after {
     -webkit-transform: scale(.9) !important;
     transform: scale(.9) !important;
 }
@@ -3748,7 +3748,7 @@ line {
     stroke: var(--main-color) !important;
     stroke-dasharray: 5, 3 !important;
 }
-#voice-connection-popout .debug-button {
+#rtc-connection-popout .debug-button {
     color: #8a8e94;
 }
 #clockPluginClock {
@@ -3881,20 +3881,20 @@ line {
         opacity: .7;
     }
 }
-#voice-connection .btn-disconnect:hover::after {
+#rtc-connection .btn-disconnect:hover::after {
     -webkit-animation: wiggle 70ms infinite alternate;
     animation: wiggle 70ms infinite alternate;
 }
-#voice-connection .btn-disconnect:active::after {
+#rtc-connection .btn-disconnect:active::after {
     -webkit-animation: wiggle-active 70ms infinite alternate;
     animation: wiggle-active 70ms infinite alternate;
 }
-#voice-connection .btn-info:hover::after,
-#voice-connection .btn-info.popout-open::after {
+#rtc-connection .btn-info:hover::after,
+#rtc-connection .btn-info.popout-open::after {
     -webkit-animation: pulsate 1s infinite alternate;
     animation: pulsate 1s infinite alternate;
 }
-#voice-connection .btn-info:active::after {
+#rtc-connection .btn-info:active::after {
     -webkit-animation: pulsate-active 1s infinite alternate;
     animation: pulsate-active 1s infinite alternate;
 }
@@ -4987,7 +4987,7 @@ div.control-group .shortcut-recorder input[type=text]:focus {
 #voice-debug-modal #users-section .user-list {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
-#voice-connection .btn-group .btn-info {
+#rtc-connection .btn-group .btn-info {
     color: var(--main-color) !important;
 }
 .chat .private-channel-call .btn-icon,
@@ -8180,7 +8180,7 @@ img:not(.emote):not(.emoji)::before {
     background: rgba(0, 0, 0, 0.3) !important;
 }
 .theme-light .account .btn-group,
-.theme-light #voice-connection .btn-group {
+.theme-light #rtc-connection .btn-group {
     background: rgba(0, 0, 0, 0.4) !important;
 }
 .theme-light .channels-wrap,
